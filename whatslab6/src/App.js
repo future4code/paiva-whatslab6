@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import styled from "styled-components"
-import {Mensagem} from "./components/Mensagem"
+import {Mensagem} from "./components/Mensagem/Mensagem"
 import React from 'react';
+
 
 const AppContainer = styled.div`
   display:flex;
@@ -16,10 +17,10 @@ const AppContainer = styled.div`
 
 const MesnagemContainer = styled.div`
   display:flex;
+  background-color: #e5ddd5;
   flex:1;
   flex-direction:column;
   justify-content: flex-end;
-  padding:10px;
 `
 
 class App extends React.Component {
@@ -30,7 +31,7 @@ class App extends React.Component {
 
     <AppContainer>
       <MesnagemContainer>
-        <Mensagem/>
+          <Mensagem/>
       </MesnagemContainer>
     </AppContainer>        
 
